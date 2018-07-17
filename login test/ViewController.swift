@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    // when logged in page is tried to view but user is not logged in, following code will take them to login page.
+    // ------ **** -----
+    override func viewDidAppear(_ animated: Bool) {
+        self.performSegue ( withIdentifier: "LoginView", sender: self);
+    }
+    // ------ **** -----
+    
+    
 }
 
